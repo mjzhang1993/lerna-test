@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
@@ -10,7 +10,9 @@
       "access": "publish"
     },
     "publish": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": [
+        "*.md"
+      ],
       "registry": "https://registry.npmjs.org/"
     }
   }
