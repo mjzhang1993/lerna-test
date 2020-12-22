@@ -6,9 +6,6 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
-    "create": {
-      "access": "publish"
-    },
     "publish": {
       "ignoreChanges": [
         "*.md"
