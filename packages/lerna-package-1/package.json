@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://repo.i.yufuid.com/repository/frontend-npm-group/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,5 @@
     "@mjz-test/lerna-package-3": "^0.0.1",
     "lodash": "^4.17.20"
   },
-  "gitHead": "28cd031e0b7ea2e176036e7aa4fccc3e22a0d85a"
+  "gitHead": "ecd4dcdacb8d0d31af81bbfe38f0414e6e6a2d55"
 }
