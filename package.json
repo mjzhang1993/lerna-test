@@ -5,11 +5,17 @@
   "repository": "git@github.com:mjzhang1993/lerna-test.git",
   "author": "mjzhang1993 <mingjiazhang@yufuid.com>",
   "license": "MIT",
+  "scripts": {
+    "lerna:create": "lerna create",
+    "lerna:build": "lerna run --stream --sort build",
+    "lerna:publish": "lerna publish",
+    "clean": "lerna clean && rm -rf ./node_modules"
+  },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    
+    "lerna": "^3.22.1"
   },
   "main": "index.js"
 }

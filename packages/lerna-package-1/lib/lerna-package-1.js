@@ -7,4 +7,4 @@ function lernaPackage1(str) {
 }
 
 // something change
-console.log('this is running in package 111');
+console.log('this is running in package 111000');
