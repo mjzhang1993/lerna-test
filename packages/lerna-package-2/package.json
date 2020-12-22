@@ -30,5 +30,6 @@
   "dependencies": {
     "@mjz-test/lerna-package-1": "^0.0.1",
     "lodash": "3.10.1"
-  }
+  },
+  "gitHead": "28cd031e0b7ea2e176036e7aa4fccc3e22a0d85a"
 }
