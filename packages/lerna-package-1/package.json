@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "node ./lib/lerna-package-1.js"
+    "build": "node ./lib/lerna-package-1.js",
+    "dev": "echo \"输出\""
   },
   "bugs": {
     "url": "https://github.com/mjzhang1993/lerna-test/issues"
