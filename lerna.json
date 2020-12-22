@@ -6,10 +6,12 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
+    "create": {
+      "access": "publish"
+    },
     "publish": {
       "ignoreChanges": ["*.md"],
-      "registry": "https://registry.npmjs.org/",
-      "access": "public"
+      "registry": "https://registry.npmjs.org/"
     }
   }
 }
