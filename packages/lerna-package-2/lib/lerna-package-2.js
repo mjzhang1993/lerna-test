@@ -8,4 +8,4 @@ function lernaPackage2() {
     lernaPackage1('this is strsss');
 }
 
-console.log('this is running in package 2');
+console.log('this is running in package 2s');
