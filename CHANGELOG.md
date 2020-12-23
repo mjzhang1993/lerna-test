@@ -1,6 +1,5 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+some
+### [1.0.5](https://github.com/mjzhang1993/lerna-test/compare/v1.0.4...v1.0.5) (2020-12-23)
 
 ### [1.0.4](https://github.com/mjzhang1993/lerna-test/compare/v1.0.3...v1.0.4) (2020-12-23)
 
