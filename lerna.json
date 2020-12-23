@@ -12,7 +12,7 @@
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
       "changelogPreset": {
-        "name": "conventionalcommits",
+        "name": "conventional-changelog-angular",
         "header": "some",
         "types": [
           {
