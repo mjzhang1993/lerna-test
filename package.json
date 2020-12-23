@@ -10,12 +10,14 @@
     "lerna:build": "lerna run --stream --sort build",
     "lerna:publish": "lerna publish",
     "lerna": "lerna",
-    "clean": "lerna clean && rm -rf ./node_modules"
+    "clean": "lerna clean && rm -rf ./node_modules",
+    "commit": "cz"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "commitizen": "^4.2.2",
     "lerna": "^3.22.1"
   },
   "main": "index.js"
