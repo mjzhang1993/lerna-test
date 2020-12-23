@@ -1,6 +1,6 @@
 {
   "name": "lerna-test",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "repository": "git@github.com:mjzhang1993/lerna-test.git",
   "author": "mjzhang1993 <mingjiazhang@yufuid.com>",
