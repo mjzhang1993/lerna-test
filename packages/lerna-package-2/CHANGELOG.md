@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/mjzhang1993/lerna-test/compare/v0.1.5...v0.2.0) (2020-12-23)
+
+
+### Features
+
+* **package-1:** nothing to say ([d09efd8](https://github.com/mjzhang1993/lerna-test/commit/d09efd8ef37b8e784fcb3b327e76c21974a53639))
+
+
+
+
+
 ## [0.1.5](https://github.com/mjzhang1993/lerna-test/compare/v0.1.4...v0.1.5) (2020-12-23)
 
 **Note:** Version bump only for package @mjz-test/lerna-package-2

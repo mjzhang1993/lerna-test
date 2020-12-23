@@ -1,16 +1,22 @@
 {
-  "packages": ["packages/*"],
-  "version": "0.1.5",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.2.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": [
+        "*.md"
+      ],
       "registry": "https://registry.npmjs.org/"
     },
     "version": {
       "conventionalCommits": true,
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": [
+        "*.md"
+      ],
       "changelogPreset": {
         "name": "conventional-changelog-angular",
         "header": "some",
