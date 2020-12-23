@@ -11,7 +11,8 @@
     "lerna:publish": "lerna publish",
     "lerna": "lerna",
     "clean": "lerna clean && rm -rf ./node_modules",
-    "cz": "cz"
+    "cz": "cz",
+    "release": "standard-version"
   },
   "workspaces": [
     "packages/*"
@@ -22,7 +23,8 @@
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.6",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "standard-version": "^9.0.0"
   },
   "main": "index.js",
   "config": {
