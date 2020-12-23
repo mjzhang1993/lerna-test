@@ -11,6 +11,12 @@
         "*.md"
       ],
       "registry": "https://registry.npmjs.org/"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "*.md"
+      ]
     }
   }
 }
