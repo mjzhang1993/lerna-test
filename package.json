@@ -18,7 +18,13 @@
   ],
   "devDependencies": {
     "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^3.22.1"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
