@@ -1139,12 +1139,7 @@ ajv@^6.12.3:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ansi-escapes@^2.0.0:
-  version "2.0.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/ansi-escapes/-/ansi-escapes-2.0.0.tgz#5bae52be424878dd9783e8910e3fc2922e83c81b"
-  integrity sha1-W65SvkJIeN2Xg+iRDj/Cki6DyBs=
-
-ansi-escapes@^3.0.0, ansi-escapes@^3.2.0:
+ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
   integrity sha1-h4C5j/nb9WOBUtHx/lwde0RCl2s=
@@ -1542,11 +1537,6 @@ chalk@^2.0.0, chalk@^2.3.1, chalk@^2.4.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chardet@^0.4.0:
-  version "0.4.2"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
-  integrity sha1-tUc7M9yXxCTl2Y3IfVXU2KKci/I=
-
 chardet@^0.7.0:
   version "0.7.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
@@ -1578,14 +1568,6 @@ cli-cursor@^2.1.0:
   integrity sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
   dependencies:
     restore-cursor "^2.0.0"
-
-cli-truncate@^1.0.0:
-  version "1.1.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/cli-truncate/-/cli-truncate-1.1.0.tgz#2b2dfd83c53cfd3572b87fc4d430a808afb04086"
-  integrity sha1-Ky39g8U8/TVyuH/E1DCoCK+wQIY=
-  dependencies:
-    slice-ansi "^1.0.0"
-    string-width "^2.0.0"
 
 cli-width@^2.0.0:
   version "2.2.1"
@@ -1920,7 +1902,7 @@ cyclist@^1.0.1:
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cz-conventional-changelog@3.3.0:
+cz-conventional-changelog@3.3.0, cz-conventional-changelog@^3.3.0:
   version "3.3.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz#9246947c90404149b3fe2cf7ee91acad3b7d22d2"
   integrity sha1-kkaUfJBAQUmz/iz37pGsrTt9ItI=
@@ -1933,22 +1915,6 @@ cz-conventional-changelog@3.3.0:
     word-wrap "^1.0.3"
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
-
-cz-emoji@^1.3.1:
-  version "1.3.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/cz-emoji/-/cz-emoji-1.3.1.tgz#b851990772c3a49619167b8b24654caa86ebf0d9"
-  integrity sha1-uFGZB3LDpJYZFnuLJGVMqobr8Nk=
-  dependencies:
-    cli-truncate "^1.0.0"
-    find-up "^5.0.0"
-    fuse.js "^3.4.5"
-    homedir "^0.6.0"
-    inquirer-autocomplete-prompt "^0.12.0"
-    inquirer-maxlength-input-prompt "^1.0.1"
-    pad "^2.3.0"
-    prettier "^1.18.2"
-    read-pkg-up "^7.0.1"
-    wrap-ansi "^3.0.0"
 
 dargs@^4.0.1:
   version "4.1.0"
@@ -2294,15 +2260,6 @@ extend@~3.0.2:
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
 
-external-editor@^2.0.4, external-editor@^2.1.0:
-  version "2.2.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/external-editor/-/external-editor-2.2.0.tgz#045511cfd8d133f3846673d1047c154e214ad3d5"
-  integrity sha1-BFURz9jRM/OEZnPRBHwVTiFK09U=
-  dependencies:
-    chardet "^0.4.0"
-    iconv-lite "^0.4.17"
-    tmp "^0.0.33"
-
 external-editor@^3.0.3:
   version "3.1.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
@@ -2535,11 +2492,6 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
-
-fuse.js@^3.4.5:
-  version "3.6.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
-  integrity sha1-fehf3W4bM3fCPOAQiSZWOF/ZsQw=
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -2864,11 +2816,6 @@ homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
-homedir@^0.6.0:
-  version "0.6.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/homedir/-/homedir-0.6.0.tgz#2b21db66bf08a6db38249a3eff52d7d18706af1e"
-  integrity sha1-KyHbZr8Ipts4JJo+/1LX0YcGrx4=
-
 hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
   version "2.8.8"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
@@ -2934,7 +2881,7 @@ husky@^4.3.6:
     slash "^3.0.0"
     which-pm-runs "^1.0.0"
 
-iconv-lite@^0.4.17, iconv-lite@^0.4.24:
+iconv-lite@^0.4.24:
   version "0.4.24"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
@@ -3048,48 +2995,6 @@ init-package-json@^1.10.3:
     validate-npm-package-license "^3.0.1"
     validate-npm-package-name "^3.0.0"
 
-inquirer-autocomplete-prompt@^0.12.0:
-  version "0.12.2"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/inquirer-autocomplete-prompt/-/inquirer-autocomplete-prompt-0.12.2.tgz#693bbd9da586f98b126bd83305bb8d8714dc4155"
-  integrity sha1-aTu9naWG+YsSa9gzBbuNhxTcQVU=
-  dependencies:
-    ansi-escapes "^3.0.0"
-    chalk "^2.0.0"
-    figures "^2.0.0"
-    inquirer "3.2.0"
-    run-async "^2.3.0"
-
-inquirer-maxlength-input-prompt@^1.0.1:
-  version "1.0.2"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/inquirer-maxlength-input-prompt/-/inquirer-maxlength-input-prompt-1.0.2.tgz#1156d3ec5ee2f33847889731211a44e8acf738b9"
-  integrity sha1-EVbT7F7i8zhHiJcxIRpE6Kz3OLk=
-  dependencies:
-    chalk "^2.3.1"
-    inquirer "^5.1.0"
-    lodash.invoke "^4.5.2"
-    lodash.isfunction "^3.0.9"
-    lodash.partialright "^4.2.1"
-
-inquirer@3.2.0:
-  version "3.2.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/inquirer/-/inquirer-3.2.0.tgz#45b44c2160c729d7578c54060b3eed94487bb42b"
-  integrity sha1-RbRMIWDHKddXjFQGCz7tlEh7tCs=
-  dependencies:
-    ansi-escapes "^2.0.0"
-    chalk "^2.0.0"
-    cli-cursor "^2.1.0"
-    cli-width "^2.0.0"
-    external-editor "^2.0.4"
-    figures "^2.0.0"
-    lodash "^4.3.0"
-    mute-stream "0.0.7"
-    run-async "^2.2.0"
-    rx-lite "^4.0.8"
-    rx-lite-aggregates "^4.0.8"
-    string-width "^2.1.0"
-    strip-ansi "^4.0.0"
-    through "^2.3.6"
-
 inquirer@6.5.2, inquirer@^6.2.0:
   version "6.5.2"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/inquirer/-/inquirer-6.5.2.tgz#ad50942375d036d327ff528c08bd5fab089928ca"
@@ -3107,25 +3012,6 @@ inquirer@6.5.2, inquirer@^6.2.0:
     rxjs "^6.4.0"
     string-width "^2.1.0"
     strip-ansi "^5.1.0"
-    through "^2.3.6"
-
-inquirer@^5.1.0:
-  version "5.2.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/inquirer/-/inquirer-5.2.0.tgz#db350c2b73daca77ff1243962e9f22f099685726"
-  integrity sha1-2zUMK3Paynf/EkOWLp8i8JloVyY=
-  dependencies:
-    ansi-escapes "^3.0.0"
-    chalk "^2.0.0"
-    cli-cursor "^2.1.0"
-    cli-width "^2.0.0"
-    external-editor "^2.1.0"
-    figures "^2.0.0"
-    lodash "^4.3.0"
-    mute-stream "0.0.7"
-    run-async "^2.2.0"
-    rxjs "^5.5.2"
-    string-width "^2.1.0"
-    strip-ansi "^4.0.0"
     through "^2.3.6"
 
 ip@1.1.5:
@@ -3589,16 +3475,6 @@ lodash.get@^4.4.2:
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
-lodash.invoke@^4.5.2:
-  version "4.5.2"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.invoke/-/lodash.invoke-4.5.2.tgz#01ca07e470903affa3ffec7ad2ed22723d2f697c"
-  integrity sha1-AcoH5HCQOv+j/+x60u0icj0vaXw=
-
-lodash.isfunction@^3.0.9:
-  version "3.0.9"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
-  integrity sha1-Bt4l302zJ6yTGYHRvbBn5a9o0FE=
-
 lodash.ismatch@^4.4.0:
   version "4.4.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.ismatch/-/lodash.ismatch-4.4.0.tgz#756cb5150ca3ba6f11085a78849645f188f85f37"
@@ -3608,11 +3484,6 @@ lodash.map@^4.5.1:
   version "4.6.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
   integrity sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
-
-lodash.partialright@^4.2.1:
-  version "4.2.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash.partialright/-/lodash.partialright-4.2.1.tgz#0130d80e83363264d40074f329b8a3e7a8a1cc4b"
-  integrity sha1-ATDYDoM2MmTUAHTzKbij56ihzEs=
 
 lodash.set@^4.3.2:
   version "4.3.2"
@@ -3648,7 +3519,7 @@ lodash@3.10.1:
   version "3.10.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@4.17.20, lodash@^4.17.12, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.2.1, lodash@^4.3.0:
+lodash@4.17.20, lodash@^4.17.12, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.2.1:
   version "4.17.20"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
 
@@ -4364,13 +4235,6 @@ p-waterfall@^1.0.0:
   dependencies:
     p-reduce "^1.0.0"
 
-pad@^2.3.0:
-  version "2.3.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/pad/-/pad-2.3.0.tgz#d604f0d5433c3e1500e207279cc5cd0234b1c2aa"
-  integrity sha1-1gTw1UM8PhUA4gcnnMXNAjSxwqo=
-  dependencies:
-    wcwidth "^1.0.1"
-
 parallel-transform@^1.1.0:
   version "1.2.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/parallel-transform/-/parallel-transform-1.2.0.tgz#9049ca37d6cb2182c3b1d2c720be94d14a5814fc"
@@ -4560,11 +4424,6 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
-
-prettier@^1.18.2:
-  version "1.19.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
-  integrity sha1-99f1/4qc2HKnvkyhQglZVqYHl8s=
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -4946,7 +4805,7 @@ rimraf@^2.5.4, rimraf@^2.6.2, rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
-run-async@^2.2.0, run-async@^2.3.0:
+run-async@^2.2.0:
   version "2.4.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
   integrity sha1-hEDsz5nqPnC9QJ1JqriOEMGJpFU=
@@ -4957,25 +4816,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
-
-rx-lite-aggregates@^4.0.8:
-  version "4.0.8"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz#753b87a89a11c95467c4ac1626c4efc4e05c67be"
-  integrity sha1-dTuHqJoRyVRnxKwWJsTvxOBcZ74=
-  dependencies:
-    rx-lite "*"
-
-rx-lite@*, rx-lite@^4.0.8:
-  version "4.0.8"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
-  integrity sha1-Cx4Rr4vESDbwSmQH6S2kJGe3lEQ=
-
-rxjs@^5.5.2:
-  version "5.5.12"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/rxjs/-/rxjs-5.5.12.tgz#6fa61b8a77c3d793dbaf270bee2f43f652d741cc"
-  integrity sha1-b6YbinfD15PbrycL7i9D9lLXQcw=
-  dependencies:
-    symbol-observable "1.0.1"
 
 rxjs@^6.4.0:
   version "6.6.3"
@@ -5086,13 +4926,6 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
-
-slice-ansi@^1.0.0:
-  version "1.0.0"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/slice-ansi/-/slice-ansi-1.0.0.tgz#044f1a49d8842ff307aad6b505ed178bd950134d"
-  integrity sha1-BE8aSdiEL/MHqta1Be0Xi9lQE00=
-  dependencies:
-    is-fullwidth-code-point "^2.0.0"
 
 slide@^1.1.6:
   version "1.1.6"
@@ -5287,7 +5120,7 @@ string-width@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
-"string-width@^1.0.2 || 2", string-width@^2.0.0, string-width@^2.1.0, string-width@^2.1.1:
+"string-width@^1.0.2 || 2", string-width@^2.1.0:
   version "2.1.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
   integrity sha1-q5Pyeo3BPSjKyBXEYhQ6bZASrp4=
@@ -5439,11 +5272,6 @@ supports-color@^7.1.0:
   integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
   dependencies:
     has-flag "^4.0.0"
-
-symbol-observable@1.0.1:
-  version "1.0.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
-  integrity sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ=
 
 tar@^4.4.10, tar@^4.4.12, tar@^4.4.8:
   version "4.4.13"
@@ -5768,7 +5596,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-wcwidth@^1.0.0, wcwidth@^1.0.1:
+wcwidth@^1.0.0:
   version "1.0.1"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/wcwidth/-/wcwidth-1.0.1.tgz#f0b0dcf915bc5ff1528afadb2c0e17b532da2fe8"
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
@@ -5829,14 +5657,6 @@ wordwrap@^1.0.0:
   version "1.0.0"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
   integrity sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
-
-wrap-ansi@^3.0.0:
-  version "3.0.1"
-  resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/wrap-ansi/-/wrap-ansi-3.0.1.tgz#288a04d87eda5c286e060dfe8f135ce8d007f8ba"
-  integrity sha1-KIoE2H7aXChuBg3+jxNc6NAH+Lo=
-  dependencies:
-    string-width "^2.1.1"
-    strip-ansi "^4.0.0"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
