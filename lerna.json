@@ -18,8 +18,7 @@
         "*.md"
       ],
       "changelogPreset": {
-        "name": "conventionalcommits",
-        "header": "some",
+        "name": "angular",
         "types": [
           {
             "type": "feat",
