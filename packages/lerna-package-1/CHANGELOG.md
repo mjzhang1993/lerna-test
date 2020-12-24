@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.3.1](https://github.com/mjzhang1993/lerna-test/compare/v0.3.0...v0.3.1) (2020-12-24)
+
+
+### Docs
+
+* **docz-test:** 测试是否配置有效 ([18fc477](https://github.com/mjzhang1993/lerna-test/commit/18fc477a099f089120d14c3495381e6f72f06cf8))
+
+
+
 ## [0.3.0](https://github.com/mjzhang1993/lerna-test/compare/v0.2.0...v0.3.0) (2020-12-24)
 
 
