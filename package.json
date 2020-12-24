@@ -11,7 +11,8 @@
     "lerna:publish": "lerna publish",
     "lerna": "lerna",
     "clean": "lerna clean && rm -rf ./node_modules",
-    "cz": "cz"
+    "cz": "cz",
+    "changelog": "lerna-changelog"
   },
   "workspaces": [
     "packages/*"
@@ -23,7 +24,8 @@
     "conventional-changelog-conventionalcommits": "^4.5.0",
     "cz-lerna-changelog": "^2.0.3",
     "husky": "^4.3.6",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "lerna-changelog": "^1.0.1"
   },
   "main": "index.js",
   "config": {
