@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.3.3](https://github.com/mjzhang1993/lerna-test/compare/v0.3.2...v0.3.3) (2020-12-24)
+
+
+### Docs
+
+* **package-1:** 测试 lerna.json 是不是自己改动的 ([02c2549](https://github.com/mjzhang1993/lerna-test/commit/02c25496aba43dd678c132679c34f13a6b8d80bf))
+
+
+
 ## [0.3.2](https://github.com/mjzhang1993/lerna-test/compare/v0.3.1...v0.3.2) (2020-12-24)
 
 **Note:** Version bump only for package lerna-test
