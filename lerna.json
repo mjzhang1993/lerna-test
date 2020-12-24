@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.3.2",
+  "version": "0.3.1",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
@@ -18,7 +18,7 @@
         "*.md"
       ],
       "changelogPreset": {
-        "name": "angular",
+        "name": "conventionalcommits",
         "types": [
           {
             "type": "feat",
@@ -32,14 +32,7 @@
             "type": "docs",
             "section": "Docs"
           }
-        ],
-        "issuePrefixes": [
-          "#"
-        ],
-        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
-        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
-        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
-        "userUrlFormat": "{{host}}/{{user}}"
+        ]
       }
     }
   }

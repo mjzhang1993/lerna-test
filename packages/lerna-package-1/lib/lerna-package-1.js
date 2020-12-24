@@ -7,4 +7,4 @@ function lernaPackage1(str) {
 }
 
 // something change
-console.log('this is running in package 11ws swaa');
+console.log('this is running in package 11ws swaaq');
