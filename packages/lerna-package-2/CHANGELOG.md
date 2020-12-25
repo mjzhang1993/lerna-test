@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/mjzhang1993/lerna-test/compare/v0.3.3...v0.4.0) (2020-12-25)
+
+
+### Features
+
+* **icon:** 测试是否有版本控制输出 ([7257f7d](https://github.com/mjzhang1993/lerna-test/commit/7257f7d6e1195a68c8690e6c695de0248c946ace))
+
+
+### Bug Fixes
+
+* **xxx:** buxiangxie ([c9d6014](https://github.com/mjzhang1993/lerna-test/commit/c9d6014c98f4c0ae19d6381f887c610cb978c718))
+
+
+### Docs
+
+* **dovz:** nothing to change ([439f441](https://github.com/mjzhang1993/lerna-test/commit/439f441546690977f919323ea8b8c0953f22df02))
+* **odss:** do not change ([aaedaee](https://github.com/mjzhang1993/lerna-test/commit/aaedaee22d73b849734214454bc636be87dd494e))
+
+
+
 ### [0.3.3](https://github.com/mjzhang1993/lerna-test/compare/v0.3.2...v0.3.3) (2020-12-24)
 
 **Note:** Version bump only for package @mjz-test/lerna-package-2

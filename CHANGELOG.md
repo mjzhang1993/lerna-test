@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/mjzhang1993/lerna-test/compare/v0.3.3...v0.4.0) (2020-12-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **build:** n
+
+### Features
+
+* **build:** 修复一些问题 ([bee9847](https://github.com/mjzhang1993/lerna-test/commit/bee98478c33a860f251df968d1bf768ab5e04741)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* **core:** test something ([0bba74b](https://github.com/mjzhang1993/lerna-test/commit/0bba74b43a8a8f9934450ab88cb25ddc28a32adb))
+* **icon:** 测试是否有版本控制输出 ([7257f7d](https://github.com/mjzhang1993/lerna-test/commit/7257f7d6e1195a68c8690e6c695de0248c946ace))
+
+
+### Bug Fixes
+
+* **version:** 版本改动尝试 ([2debf32](https://github.com/mjzhang1993/lerna-test/commit/2debf32117984b3b73b5db2ada848811e1a8bf82))
+* **xxx:** buxiangxie ([c9d6014](https://github.com/mjzhang1993/lerna-test/commit/c9d6014c98f4c0ae19d6381f887c610cb978c718))
+
+
+### Docs
+
+* **dovz:** nothing to change ([439f441](https://github.com/mjzhang1993/lerna-test/commit/439f441546690977f919323ea8b8c0953f22df02))
+* **odss:** do not change ([aaedaee](https://github.com/mjzhang1993/lerna-test/commit/aaedaee22d73b849734214454bc636be87dd494e))
+
+
+
 ### [0.3.3](https://github.com/mjzhang1993/lerna-test/compare/v0.3.2...v0.3.3) (2020-12-24)
 
 
