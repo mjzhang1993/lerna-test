@@ -7889,7 +7889,7 @@ gatsby-theme-docz@^2.3.1:
     typography-theme-moraga "^0.16.19"
     yargs "^13.3.0"
 
-gatsby@^2.13.27:
+gatsby@^2.13.27, gatsby@^2.29.2:
   version "2.29.2"
   resolved "http://repo.i.yufuid.com/repository/frontend-npm-group/gatsby/-/gatsby-2.29.2.tgz#fcad36a320cd2cb34528b18762b37e8299042e82"
   integrity sha1-/K02oyDNLLNFKLGHYrN+gpkELoI=
