@@ -1,0 +1,41 @@
+---
+name: Alert
+route: /alert
+menu: Components
+---
+import { Playground, Props } from 'docz';
+import Alert from './index.tsx';
+import Button from '@/Button';
+
+# Alert 按钮组件
+
+## 组件 Props 
+
+<Props of={Alert}/>
+
+
+## 基本使用
+
+<Playground>
+  <Alert>Open</Alert>
+  <Alert type="error">Open</Alert>
+  <Alert type="primary">Open</Alert>
+</Playground>
+
+
+## 复杂一点，带有状态管理的使用
+
+<Playground>
+  {() => {
+    const [status, setStatus] = React.useState('primary');
+    function changeStatus() {
+      setStatus(status === 'primary' ? 'error' : 'primary');
+    }
+    return (
+      <div>
+        <Alert type={status}>{status}</Alert>
+        <Button onClick={changeStatus}>change status</Button>
+      </div>
+    )
+  }}
+</Playground>
