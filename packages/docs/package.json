@@ -23,6 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
+    "dev": "docz dev",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve"
@@ -31,6 +32,7 @@
     "url": "https://github.com/mjzhang1993/lerna-test/issues"
   },
   "dependencies": {
+    "@mjz-test/mjz-ui": "0.6.0",
     "docz": "^2.3.1",
     "gatsby": "^2.29.2",
     "gatsby-plugin-less": "^4.4.0",
@@ -38,9 +40,5 @@
     "less": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  },
-  "workspaces": [
-    "../../packages/**/*",
-    "../../../packages/**/*"
-  ]
+  }
 }
