@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.2](https://github.com/mjzhang1993/lerna-test/compare/v0.7.1...v0.7.2) (2020-12-29)
+
+
+### Bug Fixes
+
+* **alert:** nothing to change ([e9437aa](https://github.com/mjzhang1993/lerna-test/commit/e9437aaee4f903ea132f8894e29317a59029e95c))
+
+
+
 ### [0.7.1](https://github.com/mjzhang1993/lerna-test/compare/v0.7.0...v0.7.1) (2020-12-29)
 
 
