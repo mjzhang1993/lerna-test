@@ -4,7 +4,6 @@ import postcss from 'rollup-plugin-postcss';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 
-
 const config = {
   input: 'src/index.tsx',
   output: {
