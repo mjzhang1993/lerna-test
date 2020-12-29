@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.1](https://github.com/mjzhang1993/lerna-test/compare/v0.7.0...v0.7.1) (2020-12-29)
+
+
+### Bug Fixes
+
+* **mjz-ui:** 删除没有使用的babel 配置文件 ([ff3980a](https://github.com/mjzhang1993/lerna-test/commit/ff3980a149df7b8a3b3a18df906d976b76d448dc))
+
+
+
 ## [0.7.0](https://github.com/mjzhang1993/lerna-test/compare/v0.6.0...v0.7.0) (2020-12-29)
 
 
