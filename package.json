@@ -14,7 +14,8 @@
     "cz": "cz"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "private/*"
   ],
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
