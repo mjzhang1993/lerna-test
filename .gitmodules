@@ -1,3 +1,0 @@
-[submodule "private/yufu-ui-components"]
-	path = private/yufu-ui-components
-	url = ssh://git@phabricator.yufuid.com:2222/source/ui-components.git
