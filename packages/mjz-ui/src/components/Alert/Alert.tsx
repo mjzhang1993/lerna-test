@@ -10,6 +10,8 @@ interface IAlertProps {
   children?: React.ReactChildren;
   /** 组件类型 */
   type?: 'primary' | 'error' | 'default';
+  /** 测试label */ 
+  label?: React.ReactNode;
 }
 
 const Alert = (props: IAlertProps) => {
@@ -19,6 +21,7 @@ const Alert = (props: IAlertProps) => {
       className={`${props.className} Alert`}
       style={{backgroundColor: color, color: '#fff', padding: 20, textAlign: 'center', borderRadius: 4}}
     >
+      {props.label}:
       {props.children}
     </div>
   )
