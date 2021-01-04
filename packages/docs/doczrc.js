@@ -6,7 +6,7 @@ export default {
   /**
    * 排除哪些文件
    */
-  ignore: ["README.md"],
+  ignore: ["README.md", "../mjz-ui/node_modules"],
   /**
    * 网站的标题，默认是 package.json name
    */
@@ -32,4 +32,9 @@ export default {
    * docz dev 环境的端口号配置，同样可配置 host
    */
   port: 3000,
+  docgenConfig: {
+    searchPatterns: ["../mjz-ui/**/*"],
+  },
+  filterComponents: (files) =>
+    files.filter((filepath) => /\/[A-Z]\w*\.(js|jsx|ts|tsx)$/.test(filepath)),
 };
