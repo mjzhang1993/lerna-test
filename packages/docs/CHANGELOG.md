@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/mjzhang1993/lerna-test/compare/v0.8.1...v0.9.0) (2021-01-04)
+
+
+### Features
+
+* **docz:** 实现文档与组件分离后,文档依然可以获得组件的TS 类型 ([86c63c0](https://github.com/mjzhang1993/lerna-test/commit/86c63c08fe290f11c66ab280b69b94ee61d600bf))
+
+
+
 ## [0.8.0](https://github.com/mjzhang1993/lerna-test/compare/v0.7.2...v0.8.0) (2020-12-31)
 
 **Note:** Version bump only for package @mjz-test/docs
