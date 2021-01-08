@@ -49,6 +49,8 @@ export { default as <%= svgName %>Icon } from './<%= svgName %>';
 const iconPath = path.resolve(__dirname, "../src");
 const svgPath = path.resolve(__dirname, "../src/svg");
 
+const currentTSXFiles = fs.readdirSync(path.resolve(__dirname, "../src/svg"))
+
 function readFileDir(fileDirPath) {
   fs.readdir(fileDirPath, { encoding: "utf-8" }, (err, files) => {
     if (err) {
@@ -99,11 +101,7 @@ function readFileDir(fileDirPath) {
             }
           }
         );
-        fs.appendFile(
-          path.join(iconPath, "index.tsx"),
-          indexExport({ svgName: FileName }),
-          () => {}
-        );
+        appendIndexTSX(FileName);
       }
     });
   });
@@ -120,13 +118,13 @@ function SVGToReact(data) {
   );
 }
 
-function clearIndexTSX() {
-  fs.writeFileSync(path.join(iconPath, "index.tsx"), "", (err) => {
-    if (err) { } else {
-      console.info(success(`index.tsx is clear`));
-    }
-  });
+function appendIndexTSX(fileName) {
+  if (currentTSXFiles.includes(`${fileName}.tsx`)) return;
+  fs.appendFile(
+    path.join(iconPath, "index.tsx"),
+    indexExport({ svgName: fileName }),
+    () => {}
+  );
 }
-clearIndexTSX();
 readFileDir(fileDirRootPath)
 
