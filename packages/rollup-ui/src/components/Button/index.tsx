@@ -10,4 +10,4 @@ export { default as NoteButton } from './NoteButton';
 
 export default Button;
 
-// console.log('has log');
+console.log('has log');
