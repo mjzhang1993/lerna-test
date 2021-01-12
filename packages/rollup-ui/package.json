@@ -95,5 +95,6 @@
     "dist/es/**/*.css",
     "dist/cjs/**/*.css",
     "*.less"
-  ]
+  ],
+  "gitHead": "0be4e386e3aa7c3323c31b25c16dc4ba2d5d5f7b"
 }
