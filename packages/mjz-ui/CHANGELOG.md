@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/mjzhang1993/lerna-test/compare/v0.9.0...v0.10.0) (2021-01-12)
+
+
+### Features
+
+* **rollup-ui:** 创建以 rollup 为主的组件库构建方案 ([d069e73](https://github.com/mjzhang1993/lerna-test/commit/d069e734c4beed500190e32639726367b676ea21))
+
+
+
 ## [0.9.0](https://github.com/mjzhang1993/lerna-test/compare/v0.8.1...v0.9.0) (2021-01-04)
 
 
