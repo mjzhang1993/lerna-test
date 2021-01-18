@@ -30,14 +30,7 @@ const componentEntryFiles = cModuleNames.reduce((prev, name) => {
 
 const commonConfig = {
   mode: process.env.NODE_ENV || 'development',
-  externals: [
-    ...externalPkg,
-    ({context, request}, callback) => {
-      // 避免模块重复打包
-      entryFilesPaths.includes(path.resolve(context, request))
-        ? callback(null, request) : callback();
-    },
-  ],
+  externals: externalPkg,
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     modules: ['node_modules'],
@@ -109,7 +102,14 @@ const esmConfig = {
     index: {import: entryFile, filename: 'index.js'},
     ...componentEntryFiles
   },
-  
+  externals: [
+    ...externalPkg,
+    ({context, request}, callback) => {
+      // 避免模块重复打包
+      entryFilesPaths.includes(path.resolve(context, request))
+        ? callback(null, request) : callback();
+    },
+  ],
   output: {
     filename: 'components/[name]/index.js',
     library: {
@@ -149,6 +149,7 @@ module.exports = () => {
       ];
     case 'cjs':
       return merge(commonConfig, esmConfig, {
+        optimization: { minimize: false },
         output: {
           path: path.resolve(__dirname, 'dist/cjs/'),
         }
