@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.1](https://github.com/mjzhang1993/lerna-test/compare/v0.12.0...v0.12.1) (2021-01-18)
+
+
+### Bug Fixes
+
+* **webpack-ui:** 修复 umd 格式输出内容不正确的bug ([05a774c](https://github.com/mjzhang1993/lerna-test/commit/05a774cf261a5d2e08c32796630284098a16ae77))
+
+
+
 ## [0.12.0](https://github.com/mjzhang1993/lerna-test/compare/v0.11.0...v0.12.0) (2021-01-18)
 
 **Note:** Version bump only for package @mjz-test/lerna-package-4

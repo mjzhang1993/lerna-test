@@ -1,6 +1,6 @@
 {
   "name": "@mjz-test/docs",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "> TODO: description",
   "author": "mjzhang1993 <mingjiazhang@yufuid.com>",
   "homepage": "https://github.com/mjzhang1993/lerna-test#readme",
@@ -32,10 +32,10 @@
     "url": "https://github.com/mjzhang1993/lerna-test/issues"
   },
   "dependencies": {
-    "@mjz-test/icons": "^0.12.0",
-    "@mjz-test/mjz-ui": "^0.12.0",
-    "@mjz-test/rollup-ui": "^0.12.0",
-    "@mjz-test/webpack-ui": "^0.12.0",
+    "@mjz-test/icons": "^0.12.1",
+    "@mjz-test/mjz-ui": "^0.12.1",
+    "@mjz-test/rollup-ui": "^0.12.1",
+    "@mjz-test/webpack-ui": "^0.12.1",
     "docz": "^2.3.1",
     "gatsby": "^2.29.2",
     "gatsby-plugin-less": "^4.4.0",
