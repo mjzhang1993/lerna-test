@@ -3,6 +3,6 @@
   具体实现组件代码在与目录同名的组件内实现
 */
 
-import Alert from './Alert';
+import Alert from "./Alert";
 
 export default Alert;

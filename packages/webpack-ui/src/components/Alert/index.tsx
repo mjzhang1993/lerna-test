@@ -3,6 +3,6 @@
   具体实现组件代码在与目录同名的组件内实现
 */
 
-import Button from "./Button";
+import Alert from './Alert';
 
-export default Button;
+export default Alert;
