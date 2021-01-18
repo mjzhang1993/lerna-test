@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.2](https://github.com/mjzhang1993/lerna-test/compare/v0.12.1...v0.12.2) (2021-01-18)
+
+
+### Bug Fixes
+
+* **webpack-ui:** 修复输出 cjs 为压缩文件 ([ded4a5f](https://github.com/mjzhang1993/lerna-test/commit/ded4a5fc9ab2c8508cf3e281e97f19f900559cef))
+
+
+
 ### [0.12.1](https://github.com/mjzhang1993/lerna-test/compare/v0.12.0...v0.12.1) (2021-01-18)
 
 
