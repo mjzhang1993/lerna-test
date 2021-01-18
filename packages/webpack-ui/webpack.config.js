@@ -149,7 +149,6 @@ module.exports = () => {
       ];
     case 'cjs':
       return merge(commonConfig, esmConfig, {
-        optimization: { minimize: false },
         output: {
           path: path.resolve(__dirname, 'dist/cjs/'),
         }
