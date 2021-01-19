@@ -35,6 +35,7 @@ export default {
   docgenConfig: {
     searchPatterns: ["../mjz-ui/**/*"],
   },
+  /**/
   filterComponents: (files) =>
     files.filter((filepath) => /\/[A-Z]\w*\.(js|jsx|ts|tsx)$/.test(filepath)),
 };
