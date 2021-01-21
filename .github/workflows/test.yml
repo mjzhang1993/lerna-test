@@ -2,7 +2,7 @@ name: Unit Test
 on: [pull_request]
 jobs:
   setup:
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: cache node_modules
@@ -19,7 +19,7 @@ jobs:
         run: yarn install --frozen-lockfile
   
   test:
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: restore node_modules
