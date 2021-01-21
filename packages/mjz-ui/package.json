@@ -25,7 +25,6 @@
     "url": "git+https://github.com/mjzhang1993/lerna-test.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "rollup -c -w",
     "lint-staged:js": "eslint --fix --ext .js,.jsx",
     "lint-staged:ts": "eslint --fix --ext .ts,.tsx"

@@ -22,7 +22,6 @@
     "url": "git+https://github.com/mjzhang1993/lerna-test.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "echo package-4 finished"
   },
   "bugs": {

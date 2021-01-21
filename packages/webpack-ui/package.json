@@ -25,7 +25,6 @@
     "url": "git+https://github.com/mjzhang1993/lerna-test.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "yarn build:esm && yarn build:cjs && yarn build:umd",
     "build:esm": "rimraf dist/es && cross-env NODE_ENV=production BABEL_ENV=esm webpack --config ./webpack.config.js && yarn build:typed --outDir dist/es",
     "build:cjs": "rimraf dist/cjs && cross-env NODE_ENV=production BABEL_ENV=cjs webpack --config ./webpack.config.js && yarn build:typed --outDir dist/cjs",
