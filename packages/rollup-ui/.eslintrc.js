@@ -27,7 +27,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-    }
+    },
   },
   globals: {
     React: true,
@@ -82,15 +82,23 @@ module.exports = {
         },
       },
     ],
-    ...(process.env.ESLINT_ENV === 'commit' ? commitRules : {})
+    ...(process.env.ESLINT_ENV === 'commit' ? commitRules : {}),
   },
+  overrides: [
+    {
+      files: ['src/**/__tests__/**/*.{js,jsx,ts,tsx}'],
+      rules: {
+        'import/no-unresolved': 'off',
+      },
+    },
+  ],
   env: {
     browser: true,
     node: true,
   },
   settings: {
     // react: {
-      // version: '16.8.6',
+    // version: '16.8.6',
     // },
   },
 };

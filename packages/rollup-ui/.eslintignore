@@ -4,6 +4,9 @@ dist/**/*
 lint-staged.config.js
 .babelrc.js
 rollup.config.js
+jest.config.js
+scripts/**/*
+jest/**/*
 *.css
 *.less
 *.svg
