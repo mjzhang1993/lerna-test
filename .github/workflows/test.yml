@@ -33,4 +33,4 @@ jobs:
             modules-
           path: '**/node_modules'
       - name: test
-        run: yarn test
+        run: yarn lerna run test
