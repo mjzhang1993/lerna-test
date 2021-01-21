@@ -15,7 +15,7 @@ jobs:
             modules-${{ hashFiles('**/yarn.lock') }}
             modules-
       - name: install node_modules if cache missed
-        if: steps.yarn_cache.outputs.cache-hits != 'true'
+        if: steps.yarn_cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
   
   test:
