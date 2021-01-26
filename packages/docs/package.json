@@ -1,6 +1,6 @@
 {
   "name": "@mjz-test/docs",
-  "version": "1.15.0",
+  "version": "1.15.2",
   "description": "> TODO: description",
   "author": "mjzhang1993 <mingjiazhang@yufuid.com>",
   "homepage": "https://github.com/mjzhang1993/lerna-test#readme",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@mjz-test/icons": "^1.14.0",
-    "@mjz-test/mjz-ui": "^1.15.0",
+    "@mjz-test/mjz-ui": "^1.15.2",
     "@mjz-test/rollup-ui": "^1.14.0",
     "@mjz-test/webpack-ui": "^1.14.0",
     "docz": "^2.3.1",
