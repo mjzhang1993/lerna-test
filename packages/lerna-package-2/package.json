@@ -1,6 +1,6 @@
 {
   "name": "@mjz-test/lerna-package-2",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "> TODO: description",
   "author": "mjzhang1993 <mingjiazhang@yufuid.com>",
   "homepage": "https://github.com/mjzhang1993/lerna-test#readme",
@@ -28,7 +28,7 @@
     "url": "https://github.com/mjzhang1993/lerna-test/issues"
   },
   "dependencies": {
-    "@mjz-test/lerna-package-1": "^0.13.0",
+    "@mjz-test/lerna-package-1": "^0.13.1",
     "lodash": "3.10.1"
   },
   "gitHead": "ce8dcab5e53afe1d2ecaa22f124653ab469f632e"
