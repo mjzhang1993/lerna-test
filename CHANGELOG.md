@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+
+**Note:** Version bump only for package lerna-test
+
+
+
+
+
 ## [1.15.0](https://github.com/mjzhang1993/lerna-test/compare/v1.14.0...v1.15.0) (2021-01-26)
 
 
