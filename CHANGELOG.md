@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/mjzhang1993/lerna-test/compare/v0.12.2...v0.13.0) (2021-01-26)
+
+
+### Features
+
+* **doc:** test ([#3](https://github.com/mjzhang1993/lerna-test/issues/3)) ([b3bd9ec](https://github.com/mjzhang1993/lerna-test/commit/b3bd9ec58b31cbd07377b62cfe299046198005c9))
+* **rollup-ui:** add test config ([1250b67](https://github.com/mjzhang1993/lerna-test/commit/1250b67cc6339a369d1a82b366d8e41745691145))
+* **root:** readme ([9e990eb](https://github.com/mjzhang1993/lerna-test/commit/9e990ebdc5ee1d31b65692075393165279d9d3f4))
+* **root:** squash test ([642c1e3](https://github.com/mjzhang1993/lerna-test/commit/642c1e3402c5ccb3fda98e740a883c21e7013c1a))
+* **root:** test ([e046c99](https://github.com/mjzhang1993/lerna-test/commit/e046c99f4efcb6557eef97a52c42e5dfeaa20ebd))
+* **root:** 测试squash ([#4](https://github.com/mjzhang1993/lerna-test/issues/4)) ([2b998e8](https://github.com/mjzhang1993/lerna-test/commit/2b998e8731c2d6d700728148615c7d395d98d0cc))
+
+
+### Bug Fixes
+
+* **test:** remove unexpected test script ([5afd687](https://github.com/mjzhang1993/lerna-test/commit/5afd68796444a2cc7a8acf19872339f4dfedf5a7))
+
+
+
 ### [0.12.2](https://github.com/mjzhang1993/lerna-test/compare/v0.12.1...v0.12.2) (2021-01-18)
 
 

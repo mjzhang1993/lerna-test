@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/mjzhang1993/lerna-test/compare/v0.12.2...v0.13.0) (2021-01-26)
+
+
+### Features
+
+* **rollup-ui:** add test config ([1250b67](https://github.com/mjzhang1993/lerna-test/commit/1250b67cc6339a369d1a82b366d8e41745691145))
+
+
+
 ### [0.12.2](https://github.com/mjzhang1993/lerna-test/compare/v0.12.1...v0.12.2) (2021-01-18)
 
 

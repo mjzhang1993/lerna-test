@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/mjzhang1993/lerna-test/compare/v0.12.2...v0.13.0) (2021-01-26)
+
+
+### Bug Fixes
+
+* **test:** remove unexpected test script ([5afd687](https://github.com/mjzhang1993/lerna-test/commit/5afd68796444a2cc7a8acf19872339f4dfedf5a7))
+
+
+
 ### [0.12.2](https://github.com/mjzhang1993/lerna-test/compare/v0.12.1...v0.12.2) (2021-01-18)
 
 
