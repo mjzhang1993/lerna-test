@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.0](https://github.com/mjzhang1993/lerna-test/compare/v1.14.0...v1.15.0) (2021-01-26)
+
+
+### Bug Fixes
+
+* **mjz-ui:** nothing ([09f71ac](https://github.com/mjzhang1993/lerna-test/commit/09f71ace0b0af28a3b9d3d32946db65d4c235aae))
+
+
+
 
 
 **Note:** Version bump only for package lerna-test
