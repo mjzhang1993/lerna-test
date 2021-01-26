@@ -55,5 +55,5 @@
     "rollup-plugin-postcss": "^4.0.0",
     "typescript": "^4.1.3"
   },
-  "gitHead": "3ad2586f660fd070ae5d44188ba6910022dc7db6"
+  "gitHead": "ce8dcab5e53afe1d2ecaa22f124653ab469f632e"
 }
