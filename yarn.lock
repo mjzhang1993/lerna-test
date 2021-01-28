@@ -3841,6 +3841,13 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@yffed/core@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@yffed/core/-/core-0.2.2.tgz#d9079ed0afbe3510cfd1deb10c2454560f285f23"
+  integrity sha512-lbFDZPHa313jhnLolV8vyfG0RaJZ6Y4L+Fba5lrG9NSFeuIY3p7WtDJeat5FSQRk6AEs9Z4IvynjrbNWCfUyCA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@zkochan/cmd-shim/-/cmd-shim-3.1.0.tgz#2ab8ed81f5bb5452a85f25758eb9b8681982fd2e"

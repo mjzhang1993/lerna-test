@@ -19,6 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@yffed/core": "^0.2.2",
     "commitizen": "^4.2.2",
     "conventional-changelog-conventionalcommits": "^4.5.0",
     "cz-lerna-changelog": "^2.0.3",

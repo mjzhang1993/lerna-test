@@ -1,5 +1,5 @@
 /*
-  实际的组件实现
+  实际的组件实现 s
 */
 import * as React from 'react';
 import './btn.less';
