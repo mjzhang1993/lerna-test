@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-alpha.0](https://github.com/mjzhang1993/lerna-test/compare/v1.15.2...v2.0.0-alpha.0) (2021-01-28)
+
+
+### Bug Fixes
+
+* **some:** change ([c433fae](https://github.com/mjzhang1993/lerna-test/commit/c433fae31584f00a63e72a4a9ee252e9cc385975))
+
+
+
 ## [1.14.0](https://github.com/mjzhang1993/lerna-test/compare/v0.13.1...v1.14.0) (2021-01-26)
 
 **Note:** Version bump only for package @mjz-test/rollup-ui
