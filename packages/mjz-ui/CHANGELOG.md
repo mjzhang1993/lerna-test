@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/mjzhang1993/lerna-test/compare/v2.0.0-alpha.0...v2.0.0) (2021-02-01)
+
+
+### Bug Fixes
+
+* **mjz-ui:** [Alert] Alert Component has some code change ([cc03cf3](https://github.com/mjzhang1993/lerna-test/commit/cc03cf380caf0b1d8e67fec19221e47594717186))
+* **mjz-ui:** update version ([8d997cb](https://github.com/mjzhang1993/lerna-test/commit/8d997cbab5e87a5c1e60109fc97b165227cc28c6))
+
+
+
 ### [1.15.2](https://github.com/mjzhang1993/lerna-test/compare/v1.15.0...v1.15.2) (2021-01-26)
 
 **Note:** Version bump only for package @mjz-test/mjz-ui
