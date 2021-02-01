@@ -11,8 +11,7 @@
     "lerna:publish": "lerna publish",
     "lerna": "lerna",
     "clean": "lerna clean && rm -rf ./node_modules",
-    "cz": "cz",
-    "semantic-release": "semantic-release"
+    "cz": "cz"
   },
   "workspaces": [
     "packages/*"
@@ -25,13 +24,15 @@
     "conventional-changelog-conventionalcommits": "^4.5.0",
     "cz-lerna-changelog": "^2.0.3",
     "husky": "^4.3.6",
-    "lerna": "^3.22.1",
-    "semantic-release": "^17.3.7"
+    "lerna": "^3.22.1"
   },
   "main": "index.js",
   "config": {
     "commitizen": {
       "path": "cz-lerna-changelog"
     }
+  },
+  "dependencies": {
+    "@mjz-test/mjz-ui": "1.15.2"
   }
 }
