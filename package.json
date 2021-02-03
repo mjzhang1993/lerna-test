@@ -29,10 +29,7 @@
   "main": "index.js",
   "config": {
     "commitizen": {
-      "path": "cz-lerna-changelog"
+      "path": "@mjz-test/cz-mjz-changelog"
     }
-  },
-  "dependencies": {
-    "@mjz-test/mjz-ui": "1.15.2"
   }
 }
