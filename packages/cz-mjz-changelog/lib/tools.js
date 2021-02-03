@@ -5,8 +5,7 @@
 const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
-const chalk = require('chalk');
-const { cosmiconfigSync, cosmiconfig } = require('cosmiconfig');
+const { cosmiconfigSync } = require('cosmiconfig');
 const { getPackages } = require('@lerna/project');
 
 exports.getAllPackages = function () {

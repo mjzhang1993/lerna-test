@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const autocomplete = require('inquirer-autocomplete-prompt');
 const { analyzeCommits } = require('@semantic-release/commit-analyzer');
 const defaultConfig = require('./config');
-const buildCommit = require('./buildCommit');
+const buildCommit = require('./build-commit');
 const getQuestions = require('./commit-msg-questions');
 const {
   getChangedPackages, getAllPackages, getCommitTypeMessage, makeAffectsLine, getCustomConfig
@@ -29,9 +29,8 @@ module.exports = {
         if (affectsLine) {
           answers.body = `${affectsLine}\n` + answers.body;
         }
-        console.log(answers);
+
         const message = buildCommit(answers, config);
-        console.log(message);
         analyzeCommits({}, {
           commits: [{
             hash: '',
