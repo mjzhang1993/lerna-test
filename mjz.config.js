@@ -12,7 +12,7 @@ module.exports = {
   scopeOverrides: {
     feat: {
       default: [
-        {value: 'Project',      name: 'Project:       🎉 Begin a project.'},
+        {value: 'Project', name: 'Project:  🎉 Begin a project.'},
       ],
       'mjz-ui': cModuleNames,
     },

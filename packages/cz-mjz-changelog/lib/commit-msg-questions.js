@@ -37,8 +37,8 @@ module.exports = (allPackages, changedPackages, config) => ([
     message: '\nDenote the SCOPE of this change (optional):',
     choices(answers) {
       let scopes = [
-        { value: false,    name: 'empty:   🩹 Do not need to select the Scope option' },
-        { value: 'custom', name: 'custom   📝 Customize the value of Scope' },
+        { value: false,    name: 'empty:    Do not need to select the Scope option' },
+        { value: 'custom', name: 'custom    📝 Customize the value of Scope' },
       ];
       const typeOverrides = config.scopeOverrides && config.scopeOverrides[answers.type] || {};
       const defaultOverrides = typeOverrides.default || [];
