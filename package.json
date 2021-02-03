@@ -11,7 +11,8 @@
     "lerna:publish": "lerna publish",
     "lerna": "lerna",
     "clean": "lerna clean && rm -rf ./node_modules",
-    "cz": "cz"
+    "cz": "cz",
+    "lint": "commitlint"
   },
   "workspaces": [
     "packages/*"

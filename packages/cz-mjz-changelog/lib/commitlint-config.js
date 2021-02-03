@@ -3,6 +3,7 @@
  * https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md
 */
 const config = require('./config');
+const {getAllPackages} = require('./tools');
 
 module.exports = {
   rules: {
@@ -19,26 +20,15 @@ module.exports = {
     'type-case': [2, 'always', 'lower-case'],
     'type-empty': [2, 'never'],
     'header-max-length': [2, 'always', 100], // TODO: 待定
-    'package-enum': [2, 'always',],
-    'package-case': [2, 'always', 'lower-case'],
-    'package-empty': [2, 'always', 'lower-case'],
+    'scope-enum': async function () {
+      // rule 中的 scope 相当于实际的 package
+      const pkgs = await getAllPackages();
+      const enums = pkgs.map(pkg => pkg.name && pkg.name.replace(/^@(\w|-)+\//, ''))
+      console.log('++++++++++++');
+      console.log(enums);
+      console.log('++++++++++++');
+      return [2, 'always', enums];
+    },
+    'scope-case': [2, 'always', 'lower-case'],
   },
-  parserPreset: {
-    parserOpts: {
-      headerPattern: /^(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (?:\[([\w\$\.\-\* ]*)\])? (.*)$/,
-      headerCorrespondence: [type, package, scope, subject]
-    }
-  },
-  plugins: [
-    {
-      rules: {
-        'package-enum': function (parsed, when, value) {
-          return [
-            fasle,
-            'you are fire'
-          ]
-        }
-      }
-    }
-  ]
 }
