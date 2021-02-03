@@ -1,5 +1,5 @@
 /**
- * 总输出目录sassss
+ * 总输出目录sasssss
  * */
 
 export { default as Alert } from "./components/Alert";
