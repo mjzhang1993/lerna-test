@@ -9,18 +9,26 @@ const addType = (type, config) => {
   return `${prefix}${type}${suffix}`.trim();
 };
 
-const addPackage = (package, config) => {
+const addScope = (scope, config) => {
   const separator = config.subjectSeparator;
-  if (!package) return separator;
+  if (!scope) return separator;
 
-  return `(${package.trim()})${separator}`;
+  return `(${scope.trim()})${separator}`;
 }
 
-const addScope = (scope) => {
-  if (!scope) return '';
+const addSubScope = (subScope) => {
+  if (!subScope) return '';
 
-  return `[${scope.trim()}] `; // 有空格
+  return `[${subScope.trim()}] `; // 有空格
 };
+
+const generatePrefixHead = (answers, config) => {
+  return [
+    addType(answers.type, config),
+    addScope(answers.scope, config),
+    addSubScope(answers.subScope)
+  ].join('');
+}
 
 const addSubject = subject => subject && subject.trim();
 
@@ -48,19 +56,18 @@ const escapeSpecialChars = result => {
   return newResult;
 };
 
-module.exports = (answers, config) => {
+const buildCommit = (answers, config) => {
   const wrapOptions = {
     trim: true,
     newline: '\n',
     indent: '',
     width: defaultMaxLineWidth,
   };
-  // 减去 scope 的宽度
-  const subjectLimit = config.subjectLimit - 2 - (answers.scope && answers.scope.length || 0);
+  // 减去 scope subScope type的宽度
+  const prefixHead = generatePrefixHead(answers, config);
+  const subjectLimit = config.headerLimit - prefixHead.length;
   const head = [
-    addType(answers.type, config),
-    addPackage(answers.package, config),
-    addScope(answers.scope),
+    prefixHead,
     addSubject(answers.subject.slice(0, subjectLimit)),
   ].join('');
 
@@ -84,3 +91,8 @@ module.exports = (answers, config) => {
 
   return escapeSpecialChars(result);
 };
+
+module.exports = {
+  buildCommit,
+  generatePrefixHead
+}

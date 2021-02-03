@@ -34,8 +34,8 @@ module.exports = {
       default: [
         {value: 'CI',      name: 'CI:       👷 Add or update CI build system.'},
         {value: 'Format',  name: 'Format:   🎨 Improve structure / format of the code.'},
-        {value: 'Upgrade', name: 'Upgrade:  ⬆️ Upgrade dependencies.'},
-        {value: 'Build',   name: 'Build:    🏗 Update scripts or configuration files.'},
+        {value: 'Upgrade', name: 'Upgrade:  ⬆️  Upgrade dependencies.'},
+        {value: 'Build',   name: 'Build:    🏗  Update scripts or configuration files.'},
       ],
     }
   },

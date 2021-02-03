@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const autocomplete = require('inquirer-autocomplete-prompt');
 const { analyzeCommits } = require('@semantic-release/commit-analyzer');
 const defaultConfig = require('./config');
-const buildCommit = require('./build-commit');
+const {buildCommit} = require('./build-commit');
 const getQuestions = require('./commit-msg-questions');
 const {
   getChangedPackages, getAllPackages, getCommitTypeMessage, makeAffectsLine, getCustomConfig

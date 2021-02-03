@@ -10,7 +10,7 @@ const typeChoices = [
 
 module.exports = {
   customConfigFileName: 'mjz',
-  subjectLimit: 100, // subject 字数限制
+  headerLimit: 100, // header 字数限制
   upperCaseSubject: false, // subject 部分首字母大写
   allowBreakingChanges: ['feat', 'fix', 'refactor'], // 允许 BreakingChanges 的 type
   subjectSeparator: ': ', // subject 部分的分隔符

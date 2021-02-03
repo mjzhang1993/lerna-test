@@ -2,8 +2,10 @@
  * commitlint 默认 rule 配置
  * https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md
 */
-const config = require('./config');
-const {getAllPackages} = require('./tools');
+const defaultConfig = require('./config');
+const {getAllPackages, getCustomConfig} = require('./tools');
+const customConfig =  getCustomConfig(defaultConfig.customConfigFileName)
+const config = {...defaultConfig, ...customConfig };
 
 module.exports = {
   rules: {
@@ -19,14 +21,11 @@ module.exports = {
     'type-enum': [2, 'always', config.typeChoices.map(o => o.value)],
     'type-case': [2, 'always', 'lower-case'],
     'type-empty': [2, 'never'],
-    'header-max-length': [2, 'always', 100], // TODO: 待定
+    'header-max-length': [2, 'always', config.headerLimit],
     'scope-enum': async function () {
-      // rule 中的 scope 相当于实际的 package
       const pkgs = await getAllPackages();
       const enums = pkgs.map(pkg => pkg.name && pkg.name.replace(/^@(\w|-)+\//, ''))
-      console.log('++++++++++++');
-      console.log(enums);
-      console.log('++++++++++++');
+      
       return [2, 'always', enums];
     },
     'scope-case': [2, 'always', 'lower-case'],

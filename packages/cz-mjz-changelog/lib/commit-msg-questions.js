@@ -1,6 +1,8 @@
 /**
  * commit message 命令行问题
  * */
+const {generatePrefixHead} = require('./build-commit');
+
 function autoCompleteSource(options) {
   return (answersSoFar, input) => {
     return new Promise((resolve) => {
@@ -22,7 +24,7 @@ module.exports = (allPackages, changedPackages, config) => ([
   },
   {
     type: 'list',
-    name: 'package',
+    name: 'scope',
     choices() {
       const pkgs =  changedPackages.map((pkgName) => {
         return {value: pkgName.replace(/^@(\w|-)+\//, ''), name: pkgName};
@@ -33,36 +35,37 @@ module.exports = (allPackages, changedPackages, config) => ([
   },
   {
     type: 'list',
-    name: 'scope',
-    message: '\nDenote the SCOPE of this change (optional):',
+    name: 'subScope',
+    message: '\nDenote the SUB_SCOPE of this change (optional):',
     choices(answers) {
       let scopes = [
-        { value: false,    name: 'empty:    Do not need to select the Scope option' },
-        { value: 'custom', name: 'custom    📝 Customize the value of Scope' },
+        { value: false,    name: 'empty:    Do not need to select the SubScope option' },
+        { value: 'custom', name: 'custom    📝 Customize the value of SubScope' },
       ];
       const typeOverrides = config.scopeOverrides && config.scopeOverrides[answers.type] || {};
       const defaultOverrides = typeOverrides.default || [];
-      const pkgOverrides = typeOverrides[answers.package] || [];
+      const pkgOverrides = typeOverrides[answers.scope] || [];
 
       return [...scopes, ...defaultOverrides, ...pkgOverrides];
     },
   },
   {
     type: 'input',
-    name: 'scope',
-    message: '\nDenote the SCOPE of this change:',
+    name: 'subScope',
+    message: '\nDenote the SUB_SCOPE of this change:',
     when(answers) {
-      return answers.scope === 'custom';
+      return answers.subScope === 'custom';
     },
   },
   {
     type: 'input',
     name: 'subject',
     message: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
-    validate(value) {
-      const limit = config.subjectLimit || 100;
-      if (value.length > limit) {
-        return `Exceed limit: ${limit}`;
+    validate(value, answers) {
+      const prefixHead = generatePrefixHead(answers, config);
+      console.log(answers);
+      if (value.length > config.headerLimit - prefixHead.length) {
+        return `Header must not be longer than ${config.headerLimit} characters`;
       }
       return !!value;
     },
@@ -81,6 +84,9 @@ module.exports = (allPackages, changedPackages, config) => ([
     type: 'input',
     name: 'breaking',
     message: 'List any BREAKING CHANGES (optional):\n',
+    when(answers) {
+      return Array.isArray(config.allowBreakingChanges) && config.allowBreakingChanges.includes(answers.type)
+    },
   },
   {
     type: 'input',
