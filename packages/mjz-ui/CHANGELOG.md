@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2021-02-05)
+
+### @mjz-test/mjz-ui
+
+
+#### ✨ Features
+
+* ***[Button]***  change something to test ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* ***[Button]***  update somethibfg ([05cc0f2](https://github.com/mjzhang1993/lerna-test/commit/05cc0f24c7a8032f1be6da97e0756c0730e11e7a)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* ***[Project]***  create a new project ([805e213](https://github.com/mjzhang1993/lerna-test/commit/805e213f5f29e51177cfff1d3344dc4979365acb)), closes [#23](https://github.com/mjzhang1993/lerna-test/issues/23)
+
+#### 🐛 Bug Fixes
+
+* ***[Alert]***  Alert Component has some code change ([cc03cf3](https://github.com/mjzhang1993/lerna-test/commit/cc03cf380caf0b1d8e67fec19221e47594717186))
+* update version ([8d997cb](https://github.com/mjzhang1993/lerna-test/commit/8d997cbab5e87a5c1e60109fc97b165227cc28c6))
+
+
+
+
+
+### 👽 Other Scope
+
+
+#### ✨ Features
+
+* ***[ccc]***  chaneg ([68c7057](https://github.com/mjzhang1993/lerna-test/commit/68c705765a8fb64d1e2566b7c29f1d97494988f0))
+
+
+
+
+
+
+### 💥 BREAKING CHANGES
+
+* **mjz-ui:** yes we have ([805e213](https://github.com/mjzhang1993/lerna-test/commit/805e213f5f29e51177cfff1d3344dc4979365acb)), closes [#23](https://github.com/mjzhang1993/lerna-test/issues/23)
+* **mjz-ui:** yes wes have ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+
+
+
+
+
 ## [2.0.0](https://github.com/mjzhang1993/lerna-test/compare/v2.0.0-alpha.0...v2.0.0) (2021-02-01)
 
 

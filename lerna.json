@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "2.0.0",
+  "version": "3.0.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
@@ -19,7 +19,16 @@
       ],
       "changelogPreset": {
         "name": "@mjz-test/conventional-changelog-mjz",
-        "scopeSequence": ["@mjz-test/mjz-ui", "@mjz-test/rollup-ui", "@mjz-test/webpack-ui", "@mjz-test/icons", "@mjz-test/docs"]
+        "scopeSequence": [
+          "@mjz-test/mjz-ui",
+          "@mjz-test/rollup-ui",
+          "@mjz-test/webpack-ui",
+          "@mjz-test/icons",
+          "@mjz-test/docs"
+        ],
+        "issuePrefixes": [
+          "#"
+        ]
       }
     }
   }

@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2021-02-05)
+
+### @mjz-test/rollup-ui
+
+
+
+#### 🐛 Bug Fixes
+
+* change ([772520d](https://github.com/mjzhang1993/lerna-test/commit/772520d5e645a5a8abbf957711a30b2210232c5d))
+
+
+#### 📖 Documentation
+
+* ***[Button]***  Button has docs change ([1020104](https://github.com/mjzhang1993/lerna-test/commit/1020104478d7e3da92c5583f26574a5c9de6f411))
+
+
+
+### @mjz-test/mjz-ui
+
+
+#### ✨ Features
+
+* ***[Button]***  change something to test ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* ***[Button]***  update somethibfg ([05cc0f2](https://github.com/mjzhang1993/lerna-test/commit/05cc0f24c7a8032f1be6da97e0756c0730e11e7a)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* ***[Project]***  create a new project ([805e213](https://github.com/mjzhang1993/lerna-test/commit/805e213f5f29e51177cfff1d3344dc4979365acb)), closes [#23](https://github.com/mjzhang1993/lerna-test/issues/23)
+
+#### 🐛 Bug Fixes
+
+* ***[Alert]***  Alert Component has some code change ([cc03cf3](https://github.com/mjzhang1993/lerna-test/commit/cc03cf380caf0b1d8e67fec19221e47594717186))
+* update version ([8d997cb](https://github.com/mjzhang1993/lerna-test/commit/8d997cbab5e87a5c1e60109fc97b165227cc28c6))
+
+
+
+
+
+### cz-mjz-changelog
+
+
+#### ✨ Features
+
+* ***[Project]***  change change change change change change change change change ([ab7e0cb](https://github.com/mjzhang1993/lerna-test/commit/ab7e0cb08cf227371fd451434cbb77634060a3d8))
+* ***[Project]***  create new project ([03bd72f](https://github.com/mjzhang1993/lerna-test/commit/03bd72f2281cac5531ffbb1cb3396ca2165f899d)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* test commitlint ([b57a4f7](https://github.com/mjzhang1993/lerna-test/commit/b57a4f7cce81c22ad2041a11621fce7a8f5fb6f2)), closes [#222](https://github.com/mjzhang1993/lerna-test/issues/222)
+
+#### 🐛 Bug Fixes
+
+* ***[root]***  change something ([3a7c178](https://github.com/mjzhang1993/lerna-test/commit/3a7c17808596e9701b767eec8cdb5d139883dbf4))
+
+
+
+
+
+### 👽 Other Scope
+
+
+#### ✨ Features
+
+* ***[ccc]***  chaneg ([68c7057](https://github.com/mjzhang1993/lerna-test/commit/68c705765a8fb64d1e2566b7c29f1d97494988f0))
+* nothing to change ([d8d01ce](https://github.com/mjzhang1993/lerna-test/commit/d8d01ceb2fee671e7e722baf1ba9f13b38631c4f))
+
+
+
+
+
+
+### conventional-changelog-mjz
+
+
+#### ✨ Features
+
+* ***[Project]***  create new project ([718d957](https://github.com/mjzhang1993/lerna-test/commit/718d9572d8b77a38752e7691070f06f55c2533a7))
+
+#### 🐛 Bug Fixes
+
+* [@mjzhang1993](https://github.com/mjzhang1993) fixed ([17ad912](https://github.com/mjzhang1993/lerna-test/commit/17ad91299023d5582395fa383974c34156c4f3ab))
+* [Custom Scope] update build ([05f5f87](https://github.com/mjzhang1993/lerna-test/commit/05f5f871008e1e67220c41cbdc8e2a0d00162296))
+
+
+#### 📖 Documentation
+
+* add a document ([1a64519](https://github.com/mjzhang1993/lerna-test/commit/1a64519819c6608791a720e5228fabaead007e33))
+
+
+
+### 💥 BREAKING CHANGES
+
+* **mjz-ui:** yes we have ([805e213](https://github.com/mjzhang1993/lerna-test/commit/805e213f5f29e51177cfff1d3344dc4979365acb)), closes [#23](https://github.com/mjzhang1993/lerna-test/issues/23)
+* **mjz-ui:** yes wes have ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* **cz-mjz-changelog:** yes we have ([03bd72f](https://github.com/mjzhang1993/lerna-test/commit/03bd72f2281cac5531ffbb1cb3396ca2165f899d)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
+* **cz-mjz-changelog:** old can not use ([b57a4f7](https://github.com/mjzhang1993/lerna-test/commit/b57a4f7cce81c22ad2041a11621fce7a8f5fb6f2)), closes [#222](https://github.com/mjzhang1993/lerna-test/issues/222)
+* **cz-mjz-changelog:** break change ([3a7c178](https://github.com/mjzhang1993/lerna-test/commit/3a7c17808596e9701b767eec8cdb5d139883dbf4))
+
+
+
+
+
 ## [2.0.0](https://github.com/mjzhang1993/lerna-test/compare/v2.0.0-alpha.0...v2.0.0) (2021-02-01)
 
 

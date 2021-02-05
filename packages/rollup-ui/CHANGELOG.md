@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2021-02-05)
+
+### @mjz-test/rollup-ui
+
+
+
+#### 🐛 Bug Fixes
+
+* change ([772520d](https://github.com/mjzhang1993/lerna-test/commit/772520d5e645a5a8abbf957711a30b2210232c5d))
+
+
+#### 📖 Documentation
+
+* ***[Button]***  Button has docs change ([1020104](https://github.com/mjzhang1993/lerna-test/commit/1020104478d7e3da92c5583f26574a5c9de6f411))
+
+
+
+
+
+
 ## [2.0.0](https://github.com/mjzhang1993/lerna-test/compare/v2.0.0-alpha.0...v2.0.0) (2021-02-01)
 
 
