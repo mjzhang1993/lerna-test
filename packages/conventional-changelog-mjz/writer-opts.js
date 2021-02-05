@@ -31,6 +31,11 @@ module.exports = function (config) {
 function getWriterOpts (config) {
   config = mergeDefaultConfig(config);
   const typesMap = config.types.reduce((map, c) => ({...map, [c.type]: c}), {});
+  const scopeSequenceMap = Array.isArray(config.scopeSequence) 
+    ? config.scopeSequence.reduce((map, s) => {
+      return _.isString(s) ? {...map, [s.replace(/^@(\w|-)+\//, '')]: s} : map;
+    }, {})
+    : {}
   return {
     // 给每一次 commit 做前期转换
     transform: (commit, context) => {
@@ -42,7 +47,7 @@ function getWriterOpts (config) {
       // a '!' but no 'BREAKING CHANGE' in body:
       addBangNotes(commit)
       commit.notes.forEach(note => {
-        note.title = 'BREAKING CHANGES'
+        note.title = '💥 BREAKING CHANGES'
         discard = false
       })
       const entry = typesMap[commit.type];
@@ -95,8 +100,7 @@ function getWriterOpts (config) {
     },
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
-      console.log(context);
-      console.log(context.noteGroups && context.noteGroups[0]);
+      console.log(context.noteGroups && context.noteGroups[0] && context.noteGroups[0].commit);
       const {typeSequence} = config;
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
@@ -107,14 +111,13 @@ function getWriterOpts (config) {
           const entry = typesMap[type] || {};
           return {
             type: type, 
-            typeSection: _.get(entry, 'section') || '👽 Other Scope',
+            typeSection: _.get(entry, 'section') || '',
             commits: typeCommits.sort(functionify(config.commitsSort))
           };
         })
         
         return {
-          title: scopeGroup.title,
-          // commits,
+          title: scopeSequenceMap[scopeGroup.title] || scopeGroup.title || '👽 Other Scope',
           typeGroups
         }
       });
@@ -128,8 +131,8 @@ function getWriterOpts (config) {
       // title 即为 groupBy 的值
       const {scopeSequence} = config;
       
-      let idxA = scopeSequence.indexOf(a.title)
-      let idxB = scopeSequence.indexOf(b.title)
+      let idxA = scopeSequence.indexOf(scopeSequenceMap[a.title] || a.title)
+      let idxB = scopeSequence.indexOf(scopeSequenceMap[b.title] || b.title)
       return idxA >= idxB ? -1 : 1;
     },
     commitsSort: config.commitsSort,
