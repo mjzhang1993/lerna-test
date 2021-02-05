@@ -105,6 +105,8 @@ function getWriterOpts (config) {
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
       console.log(context);
+      // TODO: 子 package 特殊处理待定
+      // const isRoot = !!_.get(context, 'packageData.workspaces');
       const {typeSequence} = config;
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
