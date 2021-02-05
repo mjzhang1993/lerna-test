@@ -99,7 +99,7 @@ function getWriterOpts (config) {
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
         const preTypeGroup = sequenceArray(commits, typeSequence, (commit) => commit.type);
-        
+        console.log(preTypeGroup);
         const typeGroups = preTypeGroup.map(typeCommits => {
           return {
             type: _.get(typeCommits, '[0].type') || '', 
