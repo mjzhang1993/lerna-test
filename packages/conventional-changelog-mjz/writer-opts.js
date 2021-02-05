@@ -95,7 +95,7 @@ function getWriterOpts (config) {
     },
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
-      console.log(context);
+      console.log(context.noteGroups);
       const {typeSequence} = config;
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
@@ -124,14 +124,9 @@ function getWriterOpts (config) {
       // title 即为 groupBy 的值
       const {scopeSequence} = config;
       
-      let str1 = scopeSequence.indexOf(a.title)
-      let str2 = scopeSequence.indexOf(b.title)
-      
-      if (str1 < 0 && str2 < 0) return 0;
-      if (str1 < 0) return -1;
-      if (str2 < 0) return 1;
-
-      return str1 - str2;
+      let idxA = scopeSequence.indexOf(a.title)
+      let idxB = scopeSequence.indexOf(b.title)
+      return idxA >= idxB ? -1 : 1;
     },
     commitsSort: config.commitsSort,
     noteGroupsSort: 'title',
