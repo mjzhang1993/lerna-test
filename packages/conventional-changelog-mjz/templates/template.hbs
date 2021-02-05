@@ -6,8 +6,19 @@
 ### {{title}}
 
 {{/if}}
+{{#each typeGroups}}
+
+{{#if type}}
+#### {{type}}
+
+{{/if}}
+
 {{#each commits}}
+
 {{> commit root=@root}}
+
+{{/each}}
+
 {{/each}}
 
 {{/each}}

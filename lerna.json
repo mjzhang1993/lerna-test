@@ -18,7 +18,8 @@
         "*.md"
       ],
       "changelogPreset": {
-        "name": "@mjz-test/conventional-changelog-mjz"
+        "name": "@mjz-test/conventional-changelog-mjz",
+        "scopeSequence": ["@mjz-test/mjz-ui", "@mjz-test/rollup-ui", "@mjz-test/webpack-ui", "@mjz-test/icons", "@mjz-test/docs"]
       }
     }
   }
