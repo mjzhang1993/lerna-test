@@ -5,6 +5,8 @@
 
 {{#each notes}}
 * {{#if commit.scope}}**{{commit.scope}}:** {{/if}}{{text}}
+
+{{> references root=@root shortHash=commit.shortHash hash=commit.hash references=commit.references}}
 {{/each}}
 {{/each}}
 

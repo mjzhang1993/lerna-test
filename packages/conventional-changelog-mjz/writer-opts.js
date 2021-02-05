@@ -13,9 +13,10 @@ module.exports = function (config) {
     readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
     readFile(resolve(__dirname, './templates/header.hbs'), 'utf-8'),
     readFile(resolve(__dirname, './templates/commit.hbs'), 'utf-8'),
-    readFile(resolve(__dirname, './templates/footer.hbs'), 'utf-8')
+    readFile(resolve(__dirname, './templates/footer.hbs'), 'utf-8'),
+    readFile(resolve(__dirname, './templates/references.hbs'), 'utf-8')
   ])
-    .spread((template, header, commit, footer) => {
+    .spread((template, header, commit, footer, references) => {
       const writerOpts = getWriterOpts(config)
       
       // 重置 handlebars 模板
@@ -23,6 +24,9 @@ module.exports = function (config) {
       writerOpts.headerPartial = header
       writerOpts.commitPartial = commit
       writerOpts.footerPartial = footer
+      writerOpts.partials = {
+        references: references
+      }
   
       return writerOpts
     })
