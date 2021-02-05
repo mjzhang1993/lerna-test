@@ -46,7 +46,7 @@ function getWriterOpts (config) {
         discard = false
       })
       const entry = typesMap[commit.type];
-      
+
       // breaking changes attached to any type are still displayed.
       if (discard && (!entry || entry.hidden)) return;
 
@@ -95,15 +95,19 @@ function getWriterOpts (config) {
     },
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
-      console.log(context.noteGroups);
+      console.log(context);
+      console.log(context.noteGroups && context.noteGroups[0]);
       const {typeSequence} = config;
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
         const preTypeGroup = sequenceArray(commits, typeSequence, (commit) => commit.type);
         
         const typeGroups = preTypeGroup.map(typeCommits => {
+          const type = _.get(typeCommits, '[0].type') || '';
+          const entry = typesMap[type] || {};
           return {
-            type: _.get(typeCommits, '[0].type') || '', 
+            type: type, 
+            typeSection: _.get(entry, 'section') || '👽 Other Scope',
             commits: typeCommits.sort(functionify(config.commitsSort))
           };
         })
@@ -137,13 +141,13 @@ function getWriterOpts (config) {
 function mergeDefaultConfig(config) {
   return {
     types: [
-      { type: 'feat',     section: 'feat:     ✨ Features'},
-      { type: 'fix',      section: 'fix:      🐛 Bug Fixes'},
-      { type: 'docs',     section: 'docs:     📖 Documentation'},
-      { type: 'refactor', section: 'refactor: 🔨 Code Refactoring'},
-      { type: 'test',     section: 'test:     🚨 Tests', hidden: true },
-      { type: 'chore',    section: 'chore:    🔧 Miscellaneous Chores', hidden: true},
-      { type: 'revert',   section: 'revert:   ⏪ Reverts'},
+      { type: 'feat',     section: '✨ Features'},
+      { type: 'fix',      section: '🐛 Bug Fixes'},
+      { type: 'docs',     section: '📖 Documentation'},
+      { type: 'refactor', section: '🔨 Code Refactoring'},
+      { type: 'test',     section: '🚨 Tests', hidden: true },
+      { type: 'chore',    section: '🔧 Miscellaneous Chores', hidden: true},
+      { type: 'revert',   section: '⏪ Reverts'},
     ],
     commitsSort: ['subScope', 'subject'],
     scopeSequence: [],
