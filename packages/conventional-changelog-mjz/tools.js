@@ -35,7 +35,7 @@ exports.sequenceArray = function (originArr, sequence, transferFn) {
       temp[key] = [a];
     }
   })
-  let result = sequence.map(s => temp[s]);
+  let result = sequence.map(s => temp[s] || []);
 
   result.push(temp[''])
   
