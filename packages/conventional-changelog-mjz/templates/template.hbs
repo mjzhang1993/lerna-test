@@ -1,26 +1,21 @@
 {{> header}}
 
-{{#each commitGroups}}
+{{~#each commitGroups}}
 
 {{#if title}}
 ### {{title}}
 
 {{/if}}
-{{#each typeGroups}}
 
+{{#each typeGroups}}
 {{#if type}}
 #### {{type}}
 
 {{/if}}
-
 {{#each commits}}
-
 {{> commit root=@root}}
-
 {{/each}}
-
 {{/each}}
-
 {{/each}}
 {{> footer}}
 

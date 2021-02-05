@@ -127,8 +127,8 @@ function getWriterOpts (config) {
       let str2 = scopeSequence.indexOf(b.title)
       
       if (str1 < 0 && str2 < 0) return 0;
-      if (str1 < 0) return 1;
-      if (str2 < 0) return -1;
+      if (str1 < 0) return -1;
+      if (str2 < 0) return 1;
 
       return str1 - str2;
     },
