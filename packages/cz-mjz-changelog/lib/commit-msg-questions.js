@@ -63,9 +63,9 @@ module.exports = (allPackages, changedPackages, config) => ([
     message: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
     validate(value, answers) {
       const prefixHead = generatePrefixHead(answers, config);
-      console.log(answers);
+
       if (value.length > config.headerLimit - prefixHead.length) {
-        return `Header must not be longer than ${config.headerLimit} characters`;
+        return `Header must not be longer than ${config.headerLimit} characters.(Now: ${prefixHead.length + value.length})`;
       }
       return !!value;
     },

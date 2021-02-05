@@ -9,6 +9,7 @@
     "lerna:create": "lerna create",
     "lerna:build": "lerna run --stream --sort build",
     "lerna:publish": "lerna publish",
+    "changelog": "lerna version --conventional-commits --no-push --no-git-tag-version",
     "lerna": "lerna",
     "clean": "lerna clean && rm -rf ./node_modules",
     "cz": "cz",
