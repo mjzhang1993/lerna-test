@@ -95,11 +95,12 @@ function getWriterOpts (config) {
     },
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
+      console.log(context);
       const {typeSequence} = config;
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
         const preTypeGroup = sequenceArray(commits, typeSequence, (commit) => commit.type);
-        console.log(preTypeGroup);
+        
         const typeGroups = preTypeGroup.map(typeCommits => {
           return {
             type: _.get(typeCommits, '[0].type') || '', 
