@@ -104,10 +104,27 @@ function getWriterOpts (config) {
     },
     // 数据再传递给 handlebars 模板渲染前，最后一次处理机会
     finalizeContext(context) {
-      console.log(context);
-      // TODO: 子 package 特殊处理待定
-      // const isRoot = !!_.get(context, 'packageData.workspaces');
       const {typeSequence} = config;
+      const isSubPackage = !_.get(context, 'packageData.workspaces');
+      
+      if (isSubPackage) {
+        const subPkgName = _.get(context, 'packageData.name');
+        const subPkgCommitGroups = {
+          [subPkgName]: {title: subPkgName, commits: []},
+          others: {title: '', commits: []}
+        };
+        context.commitGroups.forEach(scopeGroup => {
+          if (!Array.isArray(scopeGroup.commits)) return;
+          
+          subPkgCommitGroups[scopeGroup.title === subPkgName ? subPkgName : 'others'].commits.push(...scopeGroup.commits);
+        });
+
+        context.commitGroups = [
+          subPkgCommitGroups[subPkgName],
+          subPkgCommitGroups.others
+        ];
+      }
+
       context.commitGroups = context.commitGroups.map((scopeGroup) => {
         const commits = scopeGroup.commits;
         const preTypeGroup = sequenceArray(commits, typeSequence, (commit) => commit.type);
@@ -123,11 +140,12 @@ function getWriterOpts (config) {
         })
         
         return {
-          title: scopeSequenceMap[scopeGroup.title] || scopeGroup.title || '👽 Other Scope',
+          title: scopeSequenceMap[scopeGroup.title] || scopeGroup.title || '👽 Other Effect',
           typeGroups
         }
       });
 
+      context.linkCompare = true;
 
       return context;
     },
