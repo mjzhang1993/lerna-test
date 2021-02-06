@@ -145,6 +145,7 @@ function getWriterOpts (config) {
         }
       });
 
+      // TODO: version compare 处理还有点问题
       context.linkCompare = true;
 
       return context;
