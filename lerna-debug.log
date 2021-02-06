@@ -17,13 +17,15 @@
 7 verbose currentBranch main
 8 silly hasTags
 9 verbose hasTags true
-10 silly git-describe.sync "v3.1.0-3-g5c7dbd9" => {"lastTagName":"v3.1.0","lastVersion":"v3.1.0","refCount":"3","sha":"5c7dbd9","isDirty":false}
+10 silly git-describe.sync "v3.1.0-4-gb2c2a88" => {"lastTagName":"v3.1.0","lastVersion":"v3.1.0","refCount":"4","sha":"b2c2a88","isDirty":false}
 11 info Looking for changed packages since v3.1.0
 12 info ignoring diff in paths matching [ '*.md' ]
 13 silly checking diff packages/conventional-changelog-mjz
+14 silly found diff in packages/conventional-changelog-mjz/package.json
 14 silly found diff in packages/conventional-changelog-mjz/templates/template.hbs
 14 silly found diff in packages/conventional-changelog-mjz/writer-opts.js
 15 verbose filtered diff [
+15 verbose filtered diff   'packages/conventional-changelog-mjz/package.json',
 15 verbose filtered diff   'packages/conventional-changelog-mjz/templates/template.hbs',
 15 verbose filtered diff   'packages/conventional-changelog-mjz/writer-opts.js'
 15 verbose filtered diff ]
@@ -68,7 +70,7 @@
 40 silly npa }
 41 verbose getChangelogConfig Attempting to resolve preset "@mjz-test/conventional-changelog-mjz"
 42 info getChangelogConfig Successfully resolved preset "@mjz-test/conventional-changelog-mjz"
-43 verbose fixed increment 3.1.0 by patch
+43 verbose fixed increment 3.1.1 by patch
 44 info execute Skipping git tag/commit
 45 info execute Skipping git push
 46 info execute Skipping releases
@@ -77,7 +79,7 @@
 49 silly lifecycle No script for "version" in "@mjz-test/conventional-changelog-mjz", continuing
 50 silly fixed for @mjz-test/conventional-changelog-mjz at /Users/zhangmingjia/Desktop/document/lerna-test/packages/conventional-changelog-mjz
 51 error Error: Error in conventional-changelog-writer: Parse error on line 5:
-51 error ...oups}}{{#if index > 0}} ------{{#if
+51 error ...oups}}{{#if index > 0}} {{'------'}}
 51 error ---------------------^
 51 error Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'EQUALS', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
 51 error     at Parser.parseError (/Users/zhangmingjia/Desktop/document/lerna-test/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
