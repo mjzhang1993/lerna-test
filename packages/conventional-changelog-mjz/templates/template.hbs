@@ -2,6 +2,8 @@
 
 {{~#each commitGroups}}
 
+{{#if index > 0}} ------
+
 {{#if title}}
 ### {{title}}
 
@@ -15,11 +17,7 @@
 {{#each commits}}
 {{> commit root=@root}}
 {{/each}}
-
 {{/each}}
-
-{{scopeDivider}}
-
 {{/each}}
 {{> footer}}
 
