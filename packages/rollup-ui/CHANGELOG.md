@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/mjzhang1993/lerna-test/compare/...v3.1.0) (2021-02-06)
+
+
+
+#### 🐛 Bug Fixes
+
+* ***[Something]***  change rollup-ui something effect mjz-ui ([60dd465](https://github.com/mjzhang1993/lerna-test/commit/60dd46524d9adf16a21183f67cd269a458cd40fc)), closes [#6](https://github.com/mjzhang1993/lerna-test/issues/6)
+
+
+
+
+
+### 👽 Other Effect
+
+
+
+
+
+
+
+
+
+
+
 # 3.0.0 (2021-02-05)
 
 ### @mjz-test/rollup-ui

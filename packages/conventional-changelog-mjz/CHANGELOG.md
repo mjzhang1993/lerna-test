@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/mjzhang1993/lerna-test/compare/...v3.1.0) (2021-02-06)
+
+
+
+
+
+
+
+
+### 👽 Other Effect
+
+**Note:** Version bump only for package @mjz-test/conventional-changelog-mjz
+
+
+
+
+
 # 3.0.0 (2021-02-05)
 
 ### 👽 Other Scope
