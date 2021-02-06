@@ -110,8 +110,8 @@ function getWriterOpts (config) {
       if (isSubPackage) {
         const subPkgName = (_.get(context, 'packageData.name') || '').replace(/^@(\w|-)+\//, '');
         const subPkgCommitGroups = {
-          [subPkgName]: {title: subPkgName, commits: []},
-          others: {title: '', commits: []}
+          [subPkgName]: {title: '', commits: []}, // title = '' 可以不显示 scope
+          others: {title: '👽 Other Effect', commits: []}
         };
         context.commitGroups.forEach(scopeGroup => {
           if (!Array.isArray(scopeGroup.commits)) return;
@@ -140,7 +140,7 @@ function getWriterOpts (config) {
         })
         
         return {
-          title: scopeSequenceMap[scopeGroup.title] || scopeGroup.title || '👽 Other Effect',
+          title: isSubPackage ? scopeGroup.title : (scopeSequenceMap[scopeGroup.title] || scopeGroup.title || '👽 Other Effect'),
           typeGroups
         }
       });
