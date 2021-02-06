@@ -106,9 +106,9 @@ function getWriterOpts (config) {
     finalizeContext(context) {
       const {typeSequence} = config;
       const isSubPackage = !_.get(context, 'packageData.workspaces');
-      
+      // TODO: scopeGroup.title 如何处理 npm scope 的命名（@mjz-test/core） 需要提出一个公共的方法
       if (isSubPackage) {
-        const subPkgName = _.get(context, 'packageData.name');
+        const subPkgName = (_.get(context, 'packageData.name') || '').replace(/^@(\w|-)+\//, '');
         const subPkgCommitGroups = {
           [subPkgName]: {title: subPkgName, commits: []},
           others: {title: '', commits: []}
