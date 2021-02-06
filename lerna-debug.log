@@ -17,7 +17,7 @@
 7 verbose currentBranch main
 8 silly hasTags
 9 verbose hasTags true
-10 silly git-describe.sync "v3.1.0-5-gd1fe134" => {"lastTagName":"v3.1.0","lastVersion":"v3.1.0","refCount":"5","sha":"d1fe134","isDirty":false}
+10 silly git-describe.sync "v3.1.0-6-gce5fb93" => {"lastTagName":"v3.1.0","lastVersion":"v3.1.0","refCount":"6","sha":"ce5fb93","isDirty":false}
 11 info Looking for changed packages since v3.1.0
 12 info ignoring diff in paths matching [ '*.md' ]
 13 silly checking diff packages/conventional-changelog-mjz
@@ -70,7 +70,7 @@
 40 silly npa }
 41 verbose getChangelogConfig Attempting to resolve preset "@mjz-test/conventional-changelog-mjz"
 42 info getChangelogConfig Successfully resolved preset "@mjz-test/conventional-changelog-mjz"
-43 verbose fixed increment 3.1.2 by patch
+43 verbose fixed increment 3.1.3 by patch
 44 info execute Skipping git tag/commit
 45 info execute Skipping git push
 46 info execute Skipping releases

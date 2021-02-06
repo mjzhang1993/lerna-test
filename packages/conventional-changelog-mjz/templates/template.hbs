@@ -2,9 +2,11 @@
 
 {{~#each commitGroups}}
 
-{{#if @index}} {{{'------'}}}
+{{~#if @index}} 
+{{{'------'}}}
+{{~/if}}
 
-{{#if title}}
+{{~#if title}}
 ### {{title}}
 
 {{/if}}
