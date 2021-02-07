@@ -52,7 +52,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 > ### _@mjz-test/mjz-ui_
 
 
-> #### `✨ Features`
+> #### ✨ Features
 
 * ***[Button]***  change something to test ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
 * ***[Button]***  update somethibfg ([05cc0f2](https://github.com/mjzhang1993/lerna-test/commit/05cc0f24c7a8032f1be6da97e0756c0730e11e7a)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
