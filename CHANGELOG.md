@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.1.0](https://github.com/mjzhang1993/lerna-test/compare/...v3.1.0) (2021-02-06)
 
-### `@mjz-test/rollup-ui`
+#### `@mjz-test/rollup-ui`
 
 
 
@@ -17,7 +17,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-### `@mjz-test/mjz-ui`
+#### `@mjz-test/mjz-ui`
 
 
 #### ✨ Features
