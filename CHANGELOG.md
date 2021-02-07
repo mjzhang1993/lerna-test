@@ -9,7 +9,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-#### 🐛 Bug Fixes
+> #### 🐛 Bug Fixes
 
 * ***[Something]***  change rollup-ui something effect mjz-ui ([60dd465](https://github.com/mjzhang1993/lerna-test/commit/60dd46524d9adf16a21183f67cd269a458cd40fc)), closes [#6](https://github.com/mjzhang1993/lerna-test/issues/6)
 
@@ -20,7 +20,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 #### `@mjz-test/mjz-ui`
 
 
-#### ✨ Features
+> #### ✨ Features
 
 * ***[Button]***  change button something ([821ba44](https://github.com/mjzhang1993/lerna-test/commit/821ba441ab4569b3628c1b58b1fdc0a852340115)), closes [#99](https://github.com/mjzhang1993/lerna-test/issues/99)
 
@@ -52,7 +52,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 > ### _@mjz-test/mjz-ui_
 
 
-> #### ✨ Features
+#### `✨ Features`
 
 * ***[Button]***  change something to test ([b9ef899](https://github.com/mjzhang1993/lerna-test/commit/b9ef899b68680cf153c5cbcedb9c9601d70fe6ea)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
 * ***[Button]***  update somethibfg ([05cc0f2](https://github.com/mjzhang1993/lerna-test/commit/05cc0f24c7a8032f1be6da97e0756c0730e11e7a)), closes [#123](https://github.com/mjzhang1993/lerna-test/issues/123)
