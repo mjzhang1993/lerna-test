@@ -34,7 +34,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 3.0.0 (2021-02-05)
 
-### _@mjz-test/rollup-ui_
+### *@mjz-test/rollup-ui*
 
 
 
