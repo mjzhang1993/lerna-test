@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "~controls": [
+        "./src/controls/index.tsx"
+      ],
+      "~docs/*": [
+        "./docs/*"
+      ],
+      "@mjz-test/mjz-ui": [
+        "../mjz-ui/src/index.tsx"
+      ],
+      "@mjz-test/icons": [
+        "../icons/src/index.tsx"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "docs",
+    "typings",
+    "../mjz-ui/src",
+    "../icons/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "jest/**/*",
+    "../mjz-ui/src/**/__tests__/**/*",
+    "../icons/src/**/__tests__/**/*"
+  ]
+}

@@ -1,0 +1,41 @@
+import { Playground, Props } from '~controls';
+import {Button} from '@mjz-test/mjz-ui';
+import './Button.less'
+
+# Button 按钮组件
+
+## 组件 Props
+
+<Props of={Button}/>
+
+
+## 基本使用
+
+<Playground>
+  <Button>Open</Button>
+  <Button type="error">Open</Button>
+  <Button type="default">Open</Button>
+</Playground>
+
+
+## 复杂一点，带有状态管理的使用
+
+<Playground>
+  {() => {
+    const [status, setStatus] = React.useState('primary');
+    function onButtonClick() {
+      setStatus(status === 'primary' ? 'error' : 'primary');
+    }
+    const color = status === 'primary' ? '#5352ED' : '#FF4757';
+    return (
+      <div>
+        <Button onClick={onButtonClick} type={status}>change Status</Button>
+        <div style={{backgroundColor: color}} className="button-status">
+          button status
+        </div>
+      </div>
+    );
+  }}
+</Playground>
+
+![placeholder image](../../public/avatar.png)
