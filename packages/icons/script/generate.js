@@ -18,7 +18,7 @@ interface IProps extends IBaseIconTypes {
   color?: string;
 }
 
-class <%= svgName %> extends React.PureComponent<IProps> {
+const <%= svgName %> = (props: IProps) => {
   
   render(): React.ReactNode {
     const { color, ...others } = this.props;
