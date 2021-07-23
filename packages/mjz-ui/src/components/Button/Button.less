@@ -1,12 +1,43 @@
-.button {
-  padding: 0 18px;
+@prefixCls: ~'mjz-btn';
+@prefixClsIntent: ~'@{prefixCls}-intent';
+
+.@{prefixCls} {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #dce1ed;
   border-radius: 4px;
-  background-color: #fefefe;
+  padding: 4px 12px;
+  line-height: 22px;
+  color: #425a70;
+
+  &.@{prefixClsIntent}-success {
+    color: #57c37b;
+  }
+
+  &.@{prefixClsIntent}-warning {
+    color: #f7ab28;
+  }
+
+  &.@{prefixCls}-disabled {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(206, 217, 224, 0.5);
+  }
 }
 
-.button-status {
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+.@{prefixCls}.@{prefixCls}-primary {
+  background-color: #406cf8;
+  color: white;
+
+  &.@{prefixClsIntent}-success {
+    background-color: #57c37b;
+  }
+
+  &.@{prefixClsIntent}-warning {
+    background-color: #f7ab28;
+  }
+
+  &.@{prefixCls}-disabled {
+    background-color: lighten(#406cf8, 20%);
+  }
 }

@@ -1,50 +1,81 @@
-/*
-  实际的组件实现
-*/
-import * as React from "react";
-import "./Button.less";
+import React from 'react';
+import _ from 'lodash';
+import './Button.less';
 
-interface IButtonProps {
-  /** 允许覆盖样式 */
-  className?: string;
-  /** 可以传入 children */
-  children?: React.ReactChildren;
-  /** 组件类型 */
-  type?: "primary" | "error" | "default";
-  /** 组件大小 */
-  size?: "large" | "small" | "default";
-  /**
-   * 单击事件
-   */
-  onClick?: () => void;
+function uniteClassNames(...args: (string | undefined)[]): string {
+  const classNames = _.toArray(args).filter((className) => {
+    return _.isString(className) && !!className;
+  });
+  return _.isArray(classNames) ? classNames.join(' ').trim() : '';
 }
 
-const Button = (props: IButtonProps) => {
-  const color =
-    props.type === "primary"
-      ? "#5352ED"
-      : props.type === "error"
-      ? "#FF4757"
-      : "#333333";
-  const height = props.size === "large" ? 40 : props.size === "small" ? 24 : 32;
-  /** 组件底层由原生 button 组件实现 */
+export enum APPEARANCE {
+  DEFAULT = 'default',
+  PRIMARY = 'primary',
+  MINIMAL = 'minimal',
+}
+
+export enum INTENT {
+  DEFAULT = 'default',
+  SUCCESS = 'success',
+  WARNING = 'warning',
+  DANGER = 'danger',
+}
+
+export interface IButtonProps extends React.InputHTMLAttributes<HTMLButtonElement> {
+  className?: string;
+  children: string | React.ReactNode;
+  appearance?: `${APPEARANCE}`;
+  intent?: `${INTENT}`;
+  disabled?: boolean;
+  loading?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+const prefixCls = 'yufu-btn';
+const prefixClsIntent = `${prefixCls}-intent`;
+
+export const classes = {
+  root: prefixCls,
+  appearance: (appearance: IButtonProps['appearance']): string =>
+      appearance === APPEARANCE.DEFAULT ? '' : `${prefixCls}-${appearance}`,
+  intent: (intent: IButtonProps['intent']): string =>
+      intent === INTENT.DEFAULT ? '' : `${prefixClsIntent}-${intent}`,
+  disabled: `${prefixCls}-disabled`,
+  loading: `${prefixCls}-loading`,
+};
+
+const InternalButton: React.ForwardRefRenderFunction<HTMLButtonElement, IButtonProps> = (
+    props: IButtonProps,
+    ref,
+) => {
+  const { className, children, appearance, intent, disabled, loading, onClick } = props;
+  const isBtnDisabled = disabled || loading;
   return (
-    <button
-      className={`${props.className} button`}
-      style={{
-        borderColor: color,
-        color,
-        height,
-      }}
-      onClick={props.onClick}
-    >
-      {props.children}
-    </button>
+      <button
+          ref={ref}
+          type="button"
+          className={uniteClassNames(
+              classes.root,
+              classes.appearance(appearance),
+              classes.intent(intent),
+              isBtnDisabled ? classes.disabled : '',
+              loading ? classes.loading : '',
+              className,
+          )}
+          disabled={isBtnDisabled}
+          onClick={isBtnDisabled ? undefined : onClick}
+      >
+        {loading ? 'Loading...' : children}
+      </button>
   );
 };
+
+const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(InternalButton);
+
 Button.defaultProps = {
-  type: "primary",
-  size: "default",
+  appearance: APPEARANCE.DEFAULT,
+  intent: INTENT.DEFAULT,
 };
 
 export default Button;
